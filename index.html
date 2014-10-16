@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+
+	<body ng-app="single_pager">
+		<!-- includes this file.. note the single quotes inside double quotes "''" -->
+		<div ng-include="'sidebar.html'"></div>
+
+		<!-- this div used to inject other pages... -->
+		<div ng-view=""></div>
+	</body>
+	
+</html>
